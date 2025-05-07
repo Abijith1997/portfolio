@@ -102,7 +102,7 @@ export const Experience = () => {
 
           <div
             ref={containerRef}
-            className="description-column cursor-default h-[70dvh] md:h-[70dvh] w-full md:w-[90%] scroll-smooth overflow-y-scroll snap-y snap-mandatory sm:px-4 flex lg:flex-col flex-col-reverse"
+            className="description-column cursor-default h-[70dvh] md:h-[70dvh] w-full md:w-[90%] scroll-smooth overflow-y-scroll snap-y snap-mandatory sm:px-4 flex lg:flex-col flex-col-reverse px-10"
           >
             <div
               ref={descriptionRefs[0]}
