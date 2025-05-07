@@ -43,9 +43,15 @@ export const Experience = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollTop = 0;
+    }
+  }, []);
+
   return (
     <motion.div
-      className="sm:p-4  flex flex-col items-center justify-start text-white w-full  border-b-2 border-gray-700"
+      className="sm:p-4  flex flex-col items-center justify-start text-white w-full"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
