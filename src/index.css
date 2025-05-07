@@ -1,9 +1,35 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer utilities {
   .children\:shadow-white > * {
     @apply shadow-white;
   }
+}
+
+.main-name.dark {
+  text-shadow: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: rgba(17, 26, 204, 0.1) !important;
+}
+
+body.dark {
+  background-color: #1a1a1acc !important;
+}
+
+#root::-webkit-scrollbar {
+  display: none;
 }
 
 .blur-background {
@@ -14,7 +40,6 @@
   height: 100%;
   background: url("SVG/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  filter: blur(10px);
   z-index: -1;
 }
 
@@ -29,6 +54,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --background: #d2d3db;
+  --color-2: #9394a5;
 }
 
 a {

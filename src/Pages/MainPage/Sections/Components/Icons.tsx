@@ -44,12 +44,12 @@ export const Icons = () => {
     <>
       <div className="all-skills flex flex-col gap-1 py-1 sm:p-5 justify-start items-center">
         <div className="flex w-full items-center justify-center ">
-          <h2 className="text-xl font-bold text-white underline underline-offset-4 decoration-[#1b5faa] mb-1">
+          <h2 className="text-xl font-bold text-gray-800 dark:text-white underline underline-offset-4 decoration-[#1b5faa] mb-1">
             Key Skills
           </h2>
         </div>
-        <div className="all-skills flex flex-wrap gap-2 sm:gap-3 space-y-1 sm:justify-center sm:items-center justify-start items-startsm:text-sm text-xs">
-          <div className="react skill-pill flex items-center justify-center gap-1 sm:gap-2 border-2 px-2 py-1 sm:px-3 sm:py-2 rounded-md border-[#1b5faa]  cursor-pointer hover:bg-[#191a1b] transition-all duration-300">
+        <div className="all-skills flex flex-wrap gap-2 sm:gap-3 space-y-1 sm:justify-center sm:items-center justify-start items-startsm:text-sm text-xs text-white *:bg-gray-800">
+          <div className="bg-gray-800 react skill-pill flex items-center justify-center gap-1 sm:gap-2 border-2 px-2 py-1 sm:px-3 sm:py-2 rounded-md border-[#1b5faa]  cursor-pointer hover:bg-[#191a1b] transition-all duration-300">
             <IconBrandReact size={size} color="#1b5faa" />
             <p>React</p>
           </div>
@@ -90,7 +90,7 @@ export const Icons = () => {
             <p>Power BI</p>
           </div>
           <div className="skill-pill ML flex items-center justify-center gap-2 border-0 px-0.5 py-0.5 rounded-md">
-            <div className="ML-inner flex items-center justify-center gap-2 rounded-md sm:px-3 sm:py-2 bg-gray-800 hover:bg-[#191a1b] transition-all duration-300 cursor-pointer px-2 py-1">
+            <div className="ML-inner text-white flex items-center justify-center gap-2 rounded-md sm:px-3 sm:py-2 bg-gray-800 hover:bg-[#191a1b] transition-all duration-300 cursor-pointer px-2 py-1">
               <MLSVG size={size} />
               <p>Machine Learning</p>
             </div>

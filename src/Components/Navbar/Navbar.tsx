@@ -27,6 +27,12 @@ export const Navbar = () => {
       lightButton.classList.toggle("inactive");
       darkButton.classList.toggle("inactive");
     }
+    document.documentElement.classList.toggle("dark");
+    const allElements = document.querySelectorAll("*");
+
+    allElements.forEach((el) => {
+      el.classList.toggle("dark");
+    });
   };
 
   const DrawerList = (
@@ -55,10 +61,10 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className="bg-[#1a1a1a] text-2xl font-bold text-[#160718] p-4 w-full shadow-md fixed top-0 left-0 z-50 flex items-center justify-between">
+    <nav className="dark:bg-[#1a1a1a] bg-[#9394a5] text-2xl font-bold text-[#160718] p-4 w-full shadow-md fixed top-0 left-0 z-50 flex items-center justify-between">
       <div className="theme-container rounded-full !w-8 !h-8 ">
         <Button
-          className="theme-switcher !rounded-full flex items-center justify-center relative !bg-gray-900 !w-8 !h-8 !min-w-0"
+          className="theme-switcher !rounded-full flex items-center justify-center relative !dark:bg-gray-900 !w-8 !h-8 !min-w-0"
           onClick={changeTheme}
           sx={{
             color: "white",
@@ -85,7 +91,7 @@ export const Navbar = () => {
         </Button>
       </div>
 
-      <div className="pages hidden sm:flex justify-center items-center">
+      <div className="pages hidden md:flex justify-center items-center">
         <Button className="!hover:bg-red-50 hover:scale-105 !text-white transition duration-300 ease-in-out !hover:text-[#e47ef4]">
           HOME
         </Button>
@@ -94,7 +100,7 @@ export const Navbar = () => {
         </Button>
       </div>
 
-      <div className="menu-icon sm:hidden">
+      <div className="menu-icon md:hidden">
         <Button className="flex" onClick={toggleDrawer(true)} color="primary">
           <MenuIcon sx={{ color: "white" }} />
         </Button>
@@ -110,7 +116,7 @@ export const Navbar = () => {
               color: "#ffffff", // Tailwind's text-white
             },
             className:
-              "custom-drawer flex flex-col items-center justify-start !bg-gray-500 text-white h-full py-10", // optional: if you're applying Tailwind or global styles
+              "custom-drawer flex flex-col items-center justify-start !bg-gradient-to-br from-gray-800 to-gray-950 text-white h-full py-10", // optional: if you're applying Tailwind or global styles
           },
         }}
       >

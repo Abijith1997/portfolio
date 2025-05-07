@@ -6,8 +6,8 @@ import { Footer } from "../../Components/Footer/Footer";
 export const MainPage = () => {
   return (
     <>
-      <div className="landing-main relative">
-        <div className="landing blur-background"></div>
+      <div className="landing-main relative flex flex-col items-center justify-center ">
+        <div className="landing blur-md blur-background"></div>
         <Landing />
         <About />
         <Connect />

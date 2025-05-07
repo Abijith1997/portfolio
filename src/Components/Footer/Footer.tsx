@@ -9,7 +9,7 @@ import {
 export const Footer = () => {
   return (
     <footer className="footer w-full bg-black text-white items-center justify-between py-5 px-10 flex">
-      <ul className="social-links flex items-end sm:justify-end justify-center w-full gap-10">
+      <ul className="social-links flex items-end md:justify-end justify-center w-full gap-10">
         <li className="hover:scale-110 transition-all duration-300">
           <a
             href="https://www.linkedin.com/in/abijith-asokan-286927b3/"

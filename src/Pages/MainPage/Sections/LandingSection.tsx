@@ -27,18 +27,18 @@ export const Landing = () => {
     >
       <div className="total-top-text relative text-center select-none">
         <div className="name sm:text-3xl flex items-center justify-center gap-4">
-          <h1 className="font-bold bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+          <h1 className="font-bold bg-gradient-to-bl dark:from-violet-500 dark:to-fuchsia-500 from-yellow-950 to-orange-950 main-name bg-clip-text text-transparent">
             ABIJITH M A
           </h1>
         </div>
         <div className="designation text-xl flex items-center justify-center gap-4 flex-col sm:flex-row">
-          <h2 className="bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+          <h2 className="bg-gradient-to-bl dark:from-violet-500 dark:to-fuchsia-500 from-yellow-950 to-orange-950 main-name bg-clip-text text-transparent">
             DATA ANALYST
           </h2>
-          <h2 className="hidden sm:block smallDisplayRemoval bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+          <h2 className="hidden sm:block smallDisplayRemoval dark:from-violet-500 dark:to-fuchsia-500 from-yellow-950 to-orange-950 main-name bg-clip-text text-transparent">
             |
           </h2>
-          <h2 className="bg-gradient-to-bl from-violet-500 to-fuchsia-500 bg-clip-text text-transparent">
+          <h2 className="bg-gradient-to-bl dark:from-violet-500 dark:to-fuchsia-500 from-yellow-950 to-orange-950 main-name bg-clip-text text-transparent">
             SENIOR FRONTEND DEVELOPER
           </h2>
         </div>

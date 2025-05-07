@@ -17,7 +17,7 @@ export const ProfessionalBio = () => {
       <div className="p-8 h-full  flex flex-col justify-start items-start">
         <div className="flex flex-col justify-start items-between h-full gap-10">
           {/* Bio Introduction */}
-          <div className="text-gray-300 text-sm leading-relaxed space-y-4">
+          <div className="dark:text-gray-300 text-sm leading-relaxed space-y-4">
             <p className="border-l-4 border-blue-500 pl-4 italic font-medium">
               Data Analyst & Senior Frontend Developer
             </p>
@@ -46,7 +46,7 @@ export const ProfessionalBio = () => {
           </div>
 
           {/* Skills */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 mt-6">
             <div className="bg-blue-50 p-4 rounded-lg flex flex-col items-center text-center">
               <BarChart className="text-blue-600 mb-2" size={32} />
               <h3 className="font-semibold text-lg text-blue-800 mb-2">
