@@ -1,0 +1,27 @@
+/* @font-face {
+  font-family: 'CustomFont';
+  src: url('./Elegant.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./Vintage.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'parisFont';
+  src: url('./Paris.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mangoFont';
+  src: url('./Mango.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

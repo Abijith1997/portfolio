@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Landing.css";
+import "../../../assets/fonts/fonts.css";
 
 export const Landing = () => {
   const [scale, setScale] = useState(1);
@@ -27,7 +28,10 @@ export const Landing = () => {
     >
       <div className="total-top-text relative text-center select-none">
         <div className="name sm:text-3xl flex items-center justify-center gap-4">
-          <h1 className="font-bold bg-gradient-to-bl dark:from-violet-500 dark:to-fuchsia-500 from-yellow-950 to-orange-950 main-name bg-clip-text text-transparent">
+          <h1
+            style={{ fontFamily: "CustomFont, sans-serif" }}
+            className="font-bold bg-gradient-to-bl dark:from-violet-500 dark:to-fuchsia-500 from-yellow-950 to-orange-950 main-name bg-clip-text text-transparent"
+          >
             ABIJITH M A
           </h1>
         </div>
