@@ -8,8 +8,8 @@ import { Certifications } from "./Certifications";
 
 export const About = () => {
   return (
-    <div className="items-center justify-center dark:text-white text-gray-800 gap-2 about-pagefull rounded-md bg-[var(--background)] dark:bg-gray-950 shadow-md z-20 relative sm:p-14 flex flex-col md:w-[90%] w-full">
-      <div className="flex lg:flex-row gap-5 items-stretch bg-[var(--color-2)] dark:bg-gray-800  border-gray-700 flex-col-reverse lg:p-10 rounded-md items-center pt-5 lg:w-auto">
+    <div className="items-center justify-center dark:text-white text-gray-800 gap-2 about-pagefull rounded-t-md bg-[var(--background)] dark:bg-gray-950 shadow-md z-20 relative sm:p-14 flex flex-col md:w-[90%] w-full">
+      <div className="flex lg:flex-row gap-5 items-stretch bg-[var(--color-2)] dark:bg-gray-800  border-gray-700 flex-col-reverse lg:p-10 rounded-md pt-5 lg:w-auto">
         <div className="left-column flex flex-col items-start justify-start w-1/2">
           <ProfessionalBio />
         </div>

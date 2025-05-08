@@ -1,7 +1,7 @@
 import { Connect } from "./Sections/Connect";
 import { About } from "./Sections/About";
 import { Landing } from "./Sections/LandingSection";
-import { Footer } from "../../Components/Footer/Footer";
+import { Projects } from "../Projects/Projects";
 
 export const MainPage = () => {
   return (
@@ -10,8 +10,8 @@ export const MainPage = () => {
         <div className="landing blur-md blur-background"></div>
         <Landing />
         <About />
+        <Projects />
         <Connect />
-        <Footer />
       </div>
     </>
   );

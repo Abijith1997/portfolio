@@ -35,6 +35,25 @@ export const Navbar = () => {
     });
   };
 
+  const toggleHome = () => {
+    const topContainer = document.querySelector(".top-container");
+    topContainer?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+    setDrawerOpen(false);
+  };
+  const toggleProjects = () => {
+    const projectsSection = document.querySelector(".projects-pagefull");
+    projectsSection?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+    setDrawerOpen(false);
+  };
+
   const DrawerList = (
     <Box
       sx={{ width: 250 }}
@@ -53,8 +72,18 @@ export const Navbar = () => {
       </div>
 
       <div className="in-box flex justify-start items-start flex-col p-5 gap-5">
-        <Button className="!text-xl !font-bold !text-gray-50">HOME</Button>
-        <Button className="!text-xl !font-bold !text-gray-50">PROJECTS</Button>
+        <Button
+          className="!text-xl !font-bold !text-gray-50"
+          onClick={toggleHome}
+        >
+          HOME
+        </Button>
+        <Button
+          className="!text-xl !font-bold !text-gray-50"
+          onClick={toggleProjects}
+        >
+          PROJECTS
+        </Button>
         <Divider />
       </div>
     </Box>
@@ -92,10 +121,16 @@ export const Navbar = () => {
       </div>
 
       <div className="pages hidden md:flex justify-center items-center">
-        <Button className="!hover:bg-red-50 hover:scale-105 !text-white transition duration-300 ease-in-out !hover:text-[#e47ef4]">
+        <Button
+          onClick={toggleHome}
+          className="!hover:bg-red-50 hover:scale-105 !text-white transition duration-300 ease-in-out !hover:text-[#e47ef4]"
+        >
           HOME
         </Button>
-        <Button className="!hover:bg-red-50 hover:scale-105 !text-white transition duration-300 ease-in-out ">
+        <Button
+          onClick={toggleProjects}
+          className="!hover:bg-red-50 hover:scale-105 !text-white transition duration-300 ease-in-out "
+        >
           PROJECTS
         </Button>
       </div>

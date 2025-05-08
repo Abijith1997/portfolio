@@ -1,4 +1,5 @@
 import "./App.css";
+import { Footer } from "./Components/Footer/Footer";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { MainPage } from "./Pages/MainPage/MainPage";
 import "./assets/fonts/fonts.css";
@@ -10,7 +11,11 @@ function App() {
       className="App"
     >
       <Navbar />
-      <MainPage />
+      <div className="main-page">
+        <MainPage />
+      </div>
+
+      <Footer />
     </div>
   );
 }
