@@ -23,10 +23,18 @@ export const Landing = () => {
   }, []);
   return (
     <div
-      className="top-container pagefull h-screen flex flex-col justify-center items-center sticky top-0 z-10 bg-opacity-100"
-      style={{ transform: `scale(${scale})`, opacity }}
+      style={{
+        opacity,
+      }}
+      className="top-container pagefull h-screen flex sm:flex-row flex-col justify-center items-center sticky top-0 z-10 bg-opacity-100 w-screen"
     >
-      <div className="total-top-text relative text-center select-none">
+      <div
+        className="total-top-text relative text-center select-none flex-col flex items-center justify-center gap-4 w-full lg:w-1/2 h-full"
+        style={{
+          transform: `scale(${scale})`,
+          opacity,
+        }}
+      >
         <div className="name sm:text-3xl flex items-center justify-center gap-4">
           <h1
             style={{ fontFamily: "CustomFont, sans-serif" }}
@@ -47,6 +55,7 @@ export const Landing = () => {
           </h2>
         </div>
       </div>
+      <div className=" hidden lg:flex !w-1/2 h-full"></div>
     </div>
   );
 };

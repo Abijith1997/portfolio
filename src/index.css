@@ -43,6 +43,86 @@ body.dark {
   z-index: -1;
 }
 
+.top-container {
+  width: 100%;
+  background: url("SVG/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  animation: on-load 2.5s ease-in-out forwards;
+}
+
+@keyframes on-load {
+  0% {
+    filter: brightness(0.1);
+  }
+  
+  10% {
+    filter: brightness(0);
+  }
+  
+  20% {
+    filter: brightness(0.3);
+  }
+  
+  30% {
+    filter: brightness(0);
+  }
+  
+  40% {
+    filter: brightness(0.5);
+  }
+  
+  60% {
+    filter: brightness(0.3);
+  }
+  
+  80% {
+    filter: brightness(0.2);
+  }
+  
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.top-container.dark {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate {
+  animation: rotate 5s linear infinite;
+}
+
+.top-container.dark::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("SVG/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(0.3);
+  z-index: 0;
+}
+
+.top-container.dark > * {
+  position: relative;
+  z-index: 1;
+  /* ensures your content appears above the background */
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
