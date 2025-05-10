@@ -47,7 +47,6 @@ body.dark {
   width: 100%;
   background: url("SVG/background.jpg") no-repeat center center fixed;
   background-size: cover;
-  animation: on-load 2.5s ease-in-out forwards;
 }
 
 @keyframes on-load {

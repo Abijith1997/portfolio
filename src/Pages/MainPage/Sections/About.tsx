@@ -27,7 +27,7 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div className="experience-container w-full z-20 relative min-h-full p-5 sm:p-10 flex flex-col items-center justify-center gap-5 bg-[var(--color-2)] dark:bg-gray-800 h-full rounded-md md:min-w-[80%]">
+      <div className="experience-container w-full z-20 relative min-h-full p-0 sm:p-10 flex flex-col items-center justify-center gap-5 bg-[var(--color-2)] dark:bg-gray-800 h-full rounded-md md:min-w-[80%]">
         <Experience />
         <Education />
         <Certifications />

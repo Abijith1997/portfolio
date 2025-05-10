@@ -51,7 +51,7 @@ export const Experience = () => {
 
   return (
     <motion.div
-      className="sm:p-4  flex flex-col items-center justify-start text-white w-full"
+      className="sm:p-4 p-0 flex flex-col items-center justify-start text-white w-full"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -108,7 +108,7 @@ export const Experience = () => {
 
           <div
             ref={containerRef}
-            className="description-column cursor-default h-[70dvh] md:h-[70dvh] w-full md:w-[90%] scroll-smooth overflow-y-scroll snap-y snap-mandatory sm:px-4 flex lg:flex-col flex-col-reverse px-10"
+            className="py-5 description-column cursor-default h-[70dvh] md:h-[70dvh] w-full md:w-[90%] scroll-smooth overflow-y-scroll snap-y snap-mandatory px-4 flex lg:flex-col flex-col-reverse sm:px-10"
           >
             <div
               ref={descriptionRefs[0]}

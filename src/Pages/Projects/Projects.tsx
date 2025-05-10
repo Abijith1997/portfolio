@@ -1,11 +1,82 @@
 export const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "ZenTask",
+      description:
+        "Task management app with note taking integrated with Gemini for AI assistance",
+      tags: ["React.js", "TypeScript", "Supabase", "TailwindCSS", "Gemini API"],
+      image: "SVG/Zentask.png",
+      link: "https://zen-task-ten.vercel.app/#",
+    },
+    {
+      id: 2,
+      title: "Global Renewable Energy Trends and GDP",
+      description:
+        "This project explores the relationship between global renewable energy trends and Gross Domestic Product (GDP) using time series and correlation analysis. The analysis leverages publicly available datasets to visualize how renewable energy adoption has evolved globally and how it correlates with economic growth.",
+      tags: ["RStudio", "Kaggle", "Data Analysis", "Data Visualization"],
+      image: "SVG/GlobalRenewableEnergyTrends.png",
+      link: "https://www.kaggle.com/code/abijithasokan/global-renewable-energy-trends-and-gdp",
+    },
+  ];
   return (
     <div className="projects-pagefull items-center justify-center dark:text-white text-gray-800 gap-2 about-pagefull rounded-b-md bg-[var(--background)] dark:bg-gray-950 shadow-md z-20 relative sm:p-14 flex flex-col md:w-[90%] w-full">
-      <h1 className="text-3xl font-bold text-center text-gray-800 dark:text-white">
-        Projects
-      </h1>
-      <div className="projects-container w-full flex flex-col items-center justify-center gap-5">
-        Projects
+      <div className="bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-xs text-center">
+            <h1 className="font-extrabold text-gray-800 dark:text-white mb-2">
+              My Projects
+            </h1>
+            <div className="w-full h-1 bg-indigo-600 mx-auto mb-8 rounded-full"></div>
+            <p className="text-sm text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
+              Explore my latest work and personal projects. Each project
+              represents a unique challenge and learning experience.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+              >
+                <div className="relative">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full md:h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <a
+                      href={project.link}
+                      className="px-4 py-2 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors"
+                    >
+                      View Project
+                    </a>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="px-2 text-xs py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full font-medium flex flex-wrap items-center justify-start"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

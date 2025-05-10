@@ -26,7 +26,7 @@ export const Landing = () => {
       style={{
         opacity,
       }}
-      className="top-container pagefull h-screen flex sm:flex-row flex-col justify-center items-center sticky top-0 z-10 bg-opacity-100 w-screen"
+      className="top-container md:animate-on-load pagefull h-screen flex sm:flex-row flex-col justify-center items-center sticky top-0 z-10 bg-opacity-100 w-screen"
     >
       <div
         className="total-top-text relative text-center select-none flex-col flex items-center justify-center gap-4 w-full lg:w-1/2 h-full"
