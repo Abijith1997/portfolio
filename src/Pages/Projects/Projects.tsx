@@ -4,8 +4,15 @@ export const Projects = () => {
       id: 1,
       title: "ZenTask",
       description:
-        "Task management app with note taking integrated with Gemini for AI assistance",
-      tags: ["React.js", "TypeScript", "Supabase", "TailwindCSS", "Gemini API"],
+        "ZenTask is a smart task management application that combines to-do lists, note-taking, and AI-powered assistance. Integrated with Google’s Gemini, it helps users organize tasks, generate summaries, set priorities, and receive intelligent suggestions to boost productivity and streamline daily workflows.",
+      tags: [
+        "React.js",
+        "TypeScript",
+        "Supabase",
+        "TailwindCSS",
+        "Gemini API",
+        "Redux",
+      ],
       image: "SVG/Zentask.png",
       link: "https://zen-task-ten.vercel.app/#",
     },
@@ -15,13 +22,31 @@ export const Projects = () => {
       description:
         "This project explores the relationship between global renewable energy trends and Gross Domestic Product (GDP) using time series and correlation analysis. The analysis leverages publicly available datasets to visualize how renewable energy adoption has evolved globally and how it correlates with economic growth.",
       tags: ["RStudio", "Kaggle", "Data Analysis", "Data Visualization"],
-      image: "SVG/GlobalRenewableEnergyTrends.png",
+      image: "SVG/renewable.png",
       link: "https://www.kaggle.com/code/abijithasokan/global-renewable-energy-trends-and-gdp",
+    },
+    {
+      id: 3,
+      title: "Berlin Precipitation Analysis and Prediction Model",
+      description:
+        "This project analyzes historical precipitation data in Berlin and builds a prediction model to assess potential weather-related safety risks for airport operations. The model aims to enhance decision-making for flight scheduling and ground operations by forecasting precipitation levels that could impact airport safety.",
+      tags: [
+        "Python",
+        "numpy",
+        "pandas",
+        "ML",
+        "Prediction Model",
+        "Kaggle",
+        "Data Analysis",
+        "Data Visualization",
+      ],
+      image: "SVG/Berlin.png",
+      link: "https://www.kaggle.com/code/abijithasokan/berlin-weather-visualization-and-prediction-model",
     },
   ];
   return (
     <div className="projects-pagefull items-center justify-center dark:text-white text-gray-800 gap-2 about-pagefull rounded-b-md bg-[var(--background)] dark:bg-gray-950 shadow-md z-20 relative sm:p-14 flex flex-col md:w-[90%] w-full">
-      <div className="bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 rounded-md">
         <div className="max-w-7xl mx-auto">
           <div className="text-xs text-center">
             <h1 className="font-extrabold text-gray-800 dark:text-white mb-2">
@@ -38,13 +63,13 @@ export const Projects = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+                className="bg-white dark:bg-gray-800 overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 rounded-lg"
               >
                 <div className="relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full md:h-auto object-cover"
+                    className="w-full h-full md:h-auto object-cover rounded-4xl p-2 "
                   />
                   <div className="absolute inset-0 bg-black/50 bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <a
