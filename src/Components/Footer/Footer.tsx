@@ -12,7 +12,7 @@ export const Footer = () => {
       <ul className="social-links flex items-end md:justify-end justify-center w-full gap-10">
         <li className="hover:scale-110 transition-all duration-300">
           <a
-            href="https://www.linkedin.com/in/abijith-asokan-286927b3/"
+            href="https://www.linkedin.com/in/abijith-asokan-784a01338/"
             target="_blank"
           >
             <IconBrandLinkedin size={32} />
